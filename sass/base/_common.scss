@@ -1,0 +1,19 @@
+body {
+  background-color: var(--primary-white-color);
+  color: var(--text-primary-color);
+
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+}

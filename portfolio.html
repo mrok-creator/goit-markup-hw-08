@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Studio(Version2.1)-Figma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!--Шапка сторінки-->
+    <header class="header">
+      <div class="container container--flex">
+        <!--Логотип-->
+        <a href="./index.html" class="logo link">
+          <span class="logo__primary-text">Web</span
+          ><span class="logo__secondary-text">Studio</span>
+        </a>
+        <nav class="nav">
+          <!--Активне посилання-->
+          <ul class="pages-list list">
+            <li class="pages-list__item">
+              <a href="./index.html" class="pages-list__link link">Студия</a>
+            </li>
+            <li class="pages-list__item">
+              <a href="./portfolio.html" class="pages-list__link current-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="pages-list__item">
+              <a href="" class="pages-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Contacts in header-->
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-item contacts__item--positioning">
+            <a href="tel:+3809611111111" class="contacts__link link">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Примеры работ</h1>
+          <ul class="list filters">
+            <li class="filters__item">
+              <button type="button" class="btn btn-secondary">Все</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="btn btn-secondary">Веб-сайты</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="btn btn-secondary">
+                Приложения
+              </button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="btn btn-secondary">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="btn btn-secondary">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="list gallery">
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj1.jpg"
+                  alt="веб-сайт на ноутбуке"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Технокряк</h2>
+                <p class="card-info__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj2.jpg"
+                  alt="Соревнования баскетболистов"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="card-info__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj3.jpg"
+                  alt="логотип ресторана"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Ресторан Seafood</h2>
+                <p class="card-info__text">Приложение</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj4.jpg"
+                  alt="Черные наушники"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Проект Prime</h2>
+                <p class="card-info__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj5.jpg"
+                  alt="Две картонные коробки"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Проект Boxes</h2>
+                <p class="card-info__text">Приложение</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj6.jpg"
+                  alt="моноблок с примером веб-сайта"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Inspiration has no Borders</h2>
+                <p class="card-info__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj7.jpg"
+                  alt="разворот книги"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Издание Limited Edition</h2>
+                <p class="card-info__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj8.jpg"
+                  alt="етикетка с надписью"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Проект LAB</h2>
+                <p class="card-info__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="flow">
+                <img
+                  src="./images/prj9.jpg"
+                  alt="человек работающий за ноутбуком"
+                  width="370"
+                  class="flow__image"
+                />
+                <p class="flow__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis enim dolorem fugiat eum eligendi tempora illo
+                  repellat quibusdam, deserunt repudiandae itaque,
+                  necessitatibus, dolores quas minima ipsum asperiores nihil
+                  obcaecati rem.
+                </p>
+              </div>
+
+              <div class="card-info">
+                <h2 class="card-info__title">Growing Business</h2>
+                <p class="card-info__text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container--flex">
+        <div class="contact-container">
+          <a href="./index.html" class="logo link">
+            <span class="logo__primary-text">Web</span
+            ><span
+              class="logo__secondary-text logo__secondary-text--colorchange"
+              >Studio</span
+            >
+          </a>
+
+          <!--Contact info-->
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address_item">
+                <a
+                  href="https://goo.gl/maps/vkd8yYgCR2bsNaY5A"
+                  class="address__link address__link--primarycolor link"
+                >
+                  г. Киев, пр-т Леси Украинки, 26<br />
+                </a>
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link link">
+                  info@devstudio.com<br />
+                </a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+3809611111111" class="address__link link">
+                  +38 096 111 11 11<br />
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="follow-us">
+          <h2 class="follow-us__title">Присоединяйтесь</h2>
+          <div class="social">
+            <a href="#" class="social__link social-link--decoration">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link social-link--decoration">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link social-link--decoration">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="social__link social-link--decoration">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- FORM SUBSCRIBE -->
+        <form class="form-subscribe">
+          <div class="subscribe">
+            <label for="user-subscribs" class="subscribe__lable">
+              Подпишись на рассылку
+            </label>
+            <input
+              type="email"
+              name="email-subscrib"
+              id=""
+              class="subscribe__input"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="btn-wrapper">
+            <button type="submit" class="btn btn--detalising">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

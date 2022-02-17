@@ -1,0 +1,41 @@
+.features-section {
+  padding-bottom: 0;
+}
+.feature {
+  display: flex;
+  padding-left: 0;
+}
+
+.feature__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.feature__item:last-child {
+  margin-right: 0px;
+}
+
+.feature__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--text-secondary-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
