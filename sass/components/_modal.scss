@@ -39,6 +39,11 @@
   .backdrop.is-hidden > & {
     transform: scale(1.2) translate(-50%, -50%);
   }
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal__btn {
@@ -79,6 +84,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @media screen and (max-width: 480px) {
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form {
@@ -155,11 +165,13 @@
 }
 
 .policy-box__text {
-  display: flex;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    line-height: 1.17;
+  }
 }
 .policy-box__span {
   width: 15px;
@@ -167,10 +179,6 @@
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 7px;
   fill: transparent;
 }
 
@@ -181,7 +189,7 @@
 }
 
 .policy-box__link {
-  padding-left: 4px;
+  padding-left: 2px;
   text-decoration: underline;
   color: var(--accent-color);
 }
