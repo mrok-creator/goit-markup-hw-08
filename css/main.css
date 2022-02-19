@@ -791,7 +791,7 @@ h3 {
 @media screen and (min-width: 450px) {
   .team-card__item {
     width: 450px;
-    margin: 0 15px 30px;
+    margin: 0 auto 30px;
   }
 }
 
