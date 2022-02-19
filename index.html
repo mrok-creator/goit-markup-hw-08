@@ -23,7 +23,7 @@
 
   <body>
     <!--Шапка сторінки-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container--flex container">
         <a href="./index.html" class="logo link">
           <span class="logo__primary-text">Web</span
@@ -31,7 +31,7 @@
         </a>
 
         <button
-          class="menu-nav is-open"
+          class="menu-nav"
           type="button"
           aria-expanded="false"
           data-menu-button
@@ -43,16 +43,16 @@
             aria-label="Переключатель мобильного меню"
           >
             <use
-              class="menu-nav-menu"
+              class="menu-nav__menu"
               href="./images/icons.svg#icon-menu"
             ></use>
             <use
-              class="menu-nav-cross"
+              class="menu-nav__cross"
               href="./images/icons.svg#icon-cross"
             ></use>
           </svg>
         </button>
-        <div class="nav-thumb is-open" data-menu>
+        <div class="nav-thumb">
           <nav class="nav">
             <ul class="pages-list list">
               <li class="pages-list__item">
@@ -80,7 +80,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts-item contacts__item--positioning">
+            <li class="contacts__item contacts__item--positioning">
               <a href="tel:+3809611111111" class="contacts__link link">
                 <svg class="contacts__icon" width="16px" height="12px">
                   <use href="./images/icons.svg#icon-phone"></use>
@@ -91,7 +91,56 @@
           </ul>
         </div>
       </div>
-    </header> -->
+      <div class="backdrop-menu" data-menu>
+        <div class="mobil-nav">
+          <ul class="mob-pages-list list">
+            <li class="mob-pages-list__item">
+              <a href="./index.html" class="pages-list__link current-link"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-pages-list__item">
+              <a href="./portfolio.html" class="mob-pages-list__link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-pages-list__item">
+              <a href="" class="mob-pages-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a href="tel:+3809611111111" class="mobile-contacts__link link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contacts__item font">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link link"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mob-menu list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">Instagram</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">Twitter</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">Facebook</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <!--heroes-->
@@ -341,7 +390,7 @@
           </ul>
         </div>
       </section> -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="partner-title">Постоянные клиенты</h2>
           <ul class="partners list">
@@ -389,7 +438,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- <footer class="footer">
@@ -452,7 +501,7 @@
             </a>
           </div>
         </div>
-        
+
         <form class="form-subscribe">
           <div class="subscribe">
             <label for="user-subscribs" class="subscribe__lable">
@@ -473,7 +522,7 @@
           </div>
         </form>
       </div>
-    </footer>  -->
+    </footer> -->
     <!-- модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -565,6 +614,7 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
