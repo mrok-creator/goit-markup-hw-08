@@ -5,8 +5,34 @@
   background-color: var(--secondary-bg-color);
 }
 
+.footer-container--flex {
+  /*display: flex;
+    align-items: baseline;
+    justify-content: space-between;*/
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer-left {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 .contact-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .logo__secondary-text--colorchange {
@@ -41,6 +67,12 @@
 }
 
 /* ------social network */
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .follow-us__title {
   padding: 0;
   margin-top: 0;
@@ -56,11 +88,12 @@
 
 .social-box {
   display: flex;
+  // flex-wrap: wrap;
 
   width: 206px;
   height: 44px;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   padding: 0;
 
@@ -83,14 +116,18 @@
 /* ---------------FORM SUBSCRIBE--------------- */
 .form-subscribe {
   display: flex;
-  justify-content: center;
-  margin-left: 93px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  // margin-left: 93px;
 }
 
-.subscribe {
-  display: flex;
-  flex-direction: column;
-  margin-right: 12px;
+.form-subscribe {
+  display: block;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .subscribe__lable {
   margin-bottom: 20px;
@@ -104,12 +141,21 @@
 }
 
 .subscribe__input {
-  width: 358px;
+  display: block;
   height: 50px;
   padding-left: 16px;
+  margin: 0 auto 20px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
 
   background-color: transparent;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
   border-radius: 4px;
@@ -137,7 +183,7 @@
 .btn--detalising {
   height: 50px;
   width: 200px;
-  transform: translateY(35px);
+  transform: translateY(10px);
   padding-right: 47px;
 
   color: var(--primary-white-color);
