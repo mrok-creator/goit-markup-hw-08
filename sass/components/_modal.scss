@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   top: 0;
-
+  // padding: auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,11 @@
 }
 
 .modal {
+  width: 450px;
+  height: 609px;
   padding: 40px;
+
+  margin: auto;
 
   font-size: 12px;
   line-height: 1.17;

@@ -207,7 +207,10 @@ h3 {
 }
 
 .modal {
+  width: 450px;
+  height: 609px;
   padding: 40px;
+  margin: auto;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -430,6 +433,7 @@ h3 {
   flex-direction: column;
   padding-top: 48px;
   color: var(--text-secondary-color);
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -714,8 +718,8 @@ h3 {
 
 .hero {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   width: 100%;
   text-align: center;
   background-color: var(--secondary-bg-color);
@@ -734,8 +738,6 @@ h3 {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-768@1x.jpg);
   }
 }
@@ -748,6 +750,8 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     margin: 0 auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-1200@1x.jpg);
@@ -1170,16 +1174,26 @@ h3 {
   }
 }
 
-.filters :nth-child(n + 2) {
+.filters__item:nth-child(n + 2) {
   margin-left: 8px;
 }
 
-.filters :nth-child(-n + 3) {
+.filters__item:nth-child(4) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 369px) and (min-width: 768px) {
+  .filters__item:nth-child(4) {
+    margin-left: 8px;
+  }
+}
+
+.filters__item:nth-child(-n + 3) {
   margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .filters :nth-child(-n + 3) {
+  .filters__item:nth-child(-n + 3) {
     margin-bottom: 0;
   }
 }
