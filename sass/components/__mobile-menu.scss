@@ -118,4 +118,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @media (min-width: 360px) and (max-width: 410px) {
+    font-size: 15px;
+  }
+
+  @media (min-width: 320px) and (max-width: 359px) {
+    font-size: 12px;
+  }
 }

@@ -512,6 +512,18 @@ h3 {
   color: var(--accent-color);
 }
 
+@media (min-width: 360px) and (max-width: 410px) {
+  .mob-menu__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .mob-menu__link {
+    font-size: 12px;
+  }
+}
+
 .header {
   position: sticky;
   z-index: 1;
