@@ -540,6 +540,7 @@ h3 {
 
 .container--flex {
   display: flex;
+  position: relative;
   align-items: center;
 }
 
@@ -626,6 +627,7 @@ h3 {
 .pages-list {
   display: flex;
   color: var(--text-secondary-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -672,7 +674,6 @@ h3 {
 
 .contacts__item--positioning {
   margin-top: 0px;
-  margin-bottom: 11px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -733,6 +734,8 @@ h3 {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-768@1x.jpg);
   }
 }
@@ -781,8 +784,10 @@ h3 {
   }
 }
 
-.features-section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-bottom: 0;
+  }
 }
 
 .feature {
@@ -801,21 +806,21 @@ h3 {
   .feature {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__item {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 15px;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
@@ -990,7 +995,7 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 450px) and (max-width: 767px) {
   .team-card__item {
     width: 450px;
     margin: 0 auto 30px;
@@ -1373,6 +1378,7 @@ h3 {
 @media screen and (min-width: 1200px) {
   .follow-us {
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -1412,12 +1418,6 @@ h3 {
 
 /* ---------------FORM SUBSCRIBE--------------- */
 .form-subscribe {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.form-subscribe {
   display: block;
   align-items: center;
 }
@@ -1426,6 +1426,7 @@ h3 {
   .form-subscribe {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 

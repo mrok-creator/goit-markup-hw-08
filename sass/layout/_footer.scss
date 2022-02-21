@@ -79,6 +79,7 @@
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 .follow-us__title {
@@ -96,12 +97,10 @@
 
 .social-box {
   display: flex;
-  // flex-wrap: wrap;
 
   width: 206px;
   height: 44px;
   align-items: center;
-  // justify-content: space-between;
 
   padding: 0;
 
@@ -122,12 +121,6 @@
 }
 
 /* ---------------FORM SUBSCRIBE--------------- */
-.form-subscribe {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  // margin-left: 93px;
-}
 
 .form-subscribe {
   display: block;
@@ -135,6 +128,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 .subscribe__lable {
