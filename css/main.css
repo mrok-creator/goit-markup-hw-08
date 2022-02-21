@@ -649,8 +649,8 @@ h3 {
 
 /* -------------------contacts----------- */
 .contacts {
-  display: flex;
   flex-direction: column;
+  display: flex;
   padding-left: 0;
   margin-left: auto;
 }
