@@ -23,24 +23,20 @@
 .mob-pages-list {
   display: flex;
   flex-direction: column;
+  padding-top: 48px;
 
   color: var(--text-secondary-color);
 
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-
-  &:first-child {
-    margin-top: 48px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
 }
 
 .mob-pages-list__item {
   position: relative;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .mob-pages-list__link {
