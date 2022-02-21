@@ -33,7 +33,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
+    margin: -15px;
   }
 }
 
@@ -53,8 +53,8 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
-    margin-right: 15px;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
