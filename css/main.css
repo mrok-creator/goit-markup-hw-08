@@ -47,6 +47,7 @@ h3 {
 }
 
 .btn--primary:hover, .btn--primary:focus {
+  outline: none;
   color: var(--text-secondary-color);
 }
 
@@ -61,6 +62,7 @@ h3 {
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
+  outline: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -96,6 +98,7 @@ h3 {
 }
 
 .link:hover, .link:focus {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -106,6 +109,7 @@ h3 {
 }
 
 .current-link:hover, .current-link:focus {
+  outline: none;
   color: var(--secondary-bg-color);
 }
 
@@ -129,6 +133,7 @@ h3 {
 
 .current-link:hover::after,
 .current-link:focus::after {
+  outline: none;
   background-color: var(--secondary-bg-color);
 }
 
@@ -158,6 +163,7 @@ h3 {
 }
 
 .social__link:hover, .social__link:focus {
+  outline: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -305,10 +311,12 @@ h3 {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input:focus {
+.form__input:focus, .form__input:hover {
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .form__icon {
@@ -319,6 +327,7 @@ h3 {
 }
 
 .form__input:focus + .form__icon {
+  outline: none;
   fill: var(--accent-color);
 }
 
@@ -335,10 +344,12 @@ h3 {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-comments__input:focus {
+.form-comments__input:focus, .form-comments__input:hover {
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .form-comments__lable {
@@ -402,6 +413,13 @@ h3 {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1), background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn--form-design:focus, .btn--form-design:hover {
+  outline: none;
+  color: var(--accent-color);
+  background-color: var(--prtf-bg-color);
 }
 
 .backdrop-menu {
@@ -458,6 +476,7 @@ h3 {
 }
 
 .menu-current-link:hover, .menu-current-link:focus {
+  outline: none;
   color: var(--secondary-bg-color);
 }
 
@@ -489,6 +508,7 @@ h3 {
 }
 
 .mobile-contacts__link:hover, .mobile-contacts__link:focus {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -565,6 +585,7 @@ h3 {
 
 .logo span:hover,
 .logo span:focus {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -596,6 +617,7 @@ h3 {
 }
 
 .menu-nav:hover, .menu-nav:focus {
+  outline: none;
   fill: var(--accent-color);
 }
 
@@ -701,6 +723,7 @@ h3 {
 }
 
 .contacts__link:hover, .contacts__link:focus {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -1097,6 +1120,7 @@ h3 {
 }
 
 .partners__item:hover, .partners__item:focus {
+  outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--accent-color);
 }
@@ -1129,6 +1153,7 @@ h3 {
 }
 
 .partners__item :focus .partners__link {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -1221,6 +1246,7 @@ h3 {
 }
 
 .gallery__item:hover, .gallery__item:focus {
+  outline: none;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1271,6 +1297,7 @@ h3 {
 }
 
 .gallery__item:focus .flow__text {
+  outline: none;
   transform: translateY(0);
 }
 
@@ -1373,6 +1400,7 @@ h3 {
 }
 
 .address__link:hover, .address__link:focus {
+  outline: none;
   color: var(--accent-color);
 }
 
@@ -1427,6 +1455,7 @@ h3 {
 }
 
 .social-link--decoration:hover, .social-link--decoration:focus {
+  outline: none;
   background-color: var(--accent-color);
 }
 
@@ -1491,7 +1520,8 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe__input:focus {
+.subscribe__input:focus, .subscribe__input:hover {
+  outline: none;
   border: 1px solid var(--accent-color);
   box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -1516,6 +1546,7 @@ h3 {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1), background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn--detalising::after {
@@ -1529,6 +1560,12 @@ h3 {
   height: 24px;
   background-image: url("../images/send.svg");
   background-color: transparent;
+}
+
+.btn--detalising:hover, .btn--detalising:focus {
+  outline: none;
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
 }
 
 :root {

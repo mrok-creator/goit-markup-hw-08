@@ -61,6 +61,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     color: var(--accent-color);
   }
 }
@@ -116,6 +117,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     background-color: var(--accent-color);
   }
 }
@@ -174,7 +176,9 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
+    outline: none;
     border: 1px solid var(--accent-color);
     box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
   }
@@ -198,6 +202,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
 
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &::after {
     content: "";
     position: absolute;
@@ -210,5 +217,12 @@
     height: 24px;
     background-image: url("../images/send.svg");
     background-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
   }
 }
